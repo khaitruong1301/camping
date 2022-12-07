@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+
+
+.header {
+    background-color: #f8e1db;
+}
+
+.header .container{
+    padding: 15px 50px;
+}
+
+.header .container .logo {
+    padding-bottom: 15px;
+    display: block; /*Chuyển thẻ inline thành block*/
+}
+.header .container .navigation a{
+    margin-right: 15px;
+    text-decoration: none; /*Thuộc tính chỉnh dấu gạch chân thẻ a*/
+    color: #000;
+    /* background-color: red; */
+
+}
+
+.carousel {
+    height: 800px; /*Thuộc tính qui định chiều cao của thẻ*/
+    background-image: url(../Image/BG.png);
+    background-repeat: no-repeat; /*Tắt lặp lại của hình background*/
+    background-size: cover; /*Chỉnh kích thước của hình*/
+    background-position:center center; /*Vị trí hình load ra div*/
+}
+
+.products {
+    background: #faf4f2;
+}
+
+/*Thuộc tính thừa hưởng từ css cha: color, font-size, text-align */
+.products .container .product-title {
+    padding-top: 50px; 
+    text-align: center;
+}
+
+
+.products .container .product-list{
+    padding-top: 30px;
+}
+
+.products .container .product-list .product-item {
+    float: left; /*Chỉnh các div inline-block nằm trên 1 hàng load từ bên trái qua*/
+    width: 25%; /*width, height so với thẻ cha với đơn vị %*/
+    box-sizing: border-box; /*Loại trừ độ rộng của các thuộc tính như border, padding*/
+    padding: 0 15px;
+    /* border: 1px solid #000; */
+    background-color: #faf4f2;
+    
+}
+
+.products .container .product-list .product-item .container{
+    background-color: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 25px; /*Thuộc tính dùng để bo góc html*/
+    position: relative;
+}
+.products .container .product-list .product-item .container .thumbnail {
+
+}
+
+.products .container .product-list .product-item .container .thumbnail img{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 30px; 
+}
+.products .container .product-list .product-item .container .thumbnail a{
+    background: rgba(255,255,255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    position: absolute;
+    width: 30px;
+    right: 30px;
+    top: 40px;
+}
+
+.products .container .product-list .product-item .container a {
+    display: inline-block;
+    text-align: center;
+    background-color: #e8e8e8;
+    padding: 15px 0;
+    width: 80%;
+    margin: 10px 35px;
+    border-radius: 30px;
+    color: #a3a3a3;
+    text-decoration: none;
+
+}
+
+
+/*
+    position: relative, absolute, fixed
+    relative: Lấy phần đó lên tại vị trí hiện tại => di chuyển = top, left, right, bottom
+    absolute: Lấy vị trí so với position của phần tử cha gần nhất làm mốc và di chuyển = top left right bottom
+    fixed: Lấy theo toạ độ body sau đó di chuyển bằng top left right bottom
+    z-index: chỉ số để set phần tử nào nằm trên -> 1 2 3 4 => 9999
+
+*/
+
+
+
+/*
+    border: border-width border-style border-color;
+    Ví dụ: 
+    border: 1px solid #000;
+*/
+
+
+
+
+
+
+/*    
+    Thuộc tính css
+    * padding: Là cách giữa nội dung và phần viền của thẻ (Lưu ý: Không áp dụng cho thẻ inline đối với top và bottom)
+    padding: cách đều 4 cạnh (top,right,bottom,left)
+    padding: 15px 50px (Cách trên dưới 15, trái phải 50)
+    padding: top right bottom left (Chiều kim đồng hồ)
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    => Giá trị css dưới đè giá trị trên đối với cùng thuộc tính
+    * margin: Cách từ viền phần tử(thẻ) này đến viền phần tử(thẻ) khác
+
+*/
